@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso css Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           /* grid-column-gap: 1em;
+            grid-row-gap: 1em;*/
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt ut consequuntur quas quia voluptatem! Dicta et quo exercitationem eum, cumque saepe ea harum voluptate molestias porro impedit doloribus! Itaque, sed? Perspiciatis aut voluptatibus nam fugiat soluta laudantium laboriosam dicta.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>
