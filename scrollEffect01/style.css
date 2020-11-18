@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}
+
+.container .section:nth-child(1) {
+    color: aliceblue;
+    background:  url('./images/pexels-kaique-rocha-775201.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(2) {
+    color: aliceblue;
+    background:  url('./images/pexels-elina-sazonova-1907071.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(3) {
+    color: aliceblue;
+    background:  url('./images/pexels-cottonbro-5083217.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(4) {
+    color: aliceblue;
+    background:  url('./images/pexels-cottonbro-4727507.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(5) {
+    color: aliceblue;
+    background: url('./images/pexels-andré-cook-131723.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 700px;
+}
+
+.container .section .content h2 {
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2em;
+}
