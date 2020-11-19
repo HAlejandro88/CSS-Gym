@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Starbuck landingPage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aliquam totam doloribus natus perferendis id in assumenda alias architecto nemo, 
+                    blanditiis quas iste libero quia autem debitis nihil delectus voluptatibus dignissimos?
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png', '#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png', '#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png', '#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="facebook.png" alt=""></a></li>
+            <li><a href=""><img src="twitter.png" alt=""></a></li>
+            <li><a href=""><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(image, color) {
+            document.querySelector('.starbucks').src = image;
+            changeCircleColor(color);
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
